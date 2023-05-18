@@ -1,0 +1,20 @@
+{
+  "name": "enthusi.list",
+  "version": "1.0.0",
+  "description": "The easiest way to compile and share movie lists with those you love!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ykallday/Enthusi.list.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ykallday/Enthusi.list/issues"
+  },
+  "homepage": "https://github.com/ykallday/Enthusi.list#readme"
+}
