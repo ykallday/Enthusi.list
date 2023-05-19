@@ -85,7 +85,8 @@ main{
 }
 
 .item{
-    height:20vh;
+    height:30vh;
+    min-height: fit-content;
     margin: 0 auto;
     margin-top: 15px;
     margin-bottom: 20px;
@@ -133,6 +134,7 @@ main{
     line-height:1.5em;
     padding: 2px;
     padding-top:6px;
+    margin-bottom:10px;
     border-radius:3px;
     grid-column: 2/span 1;
     grid-row: 2/span 5;
@@ -147,17 +149,30 @@ main{
 
 
 /***FOOTER***/
-.footer-container, .footer-container span{
-    height: 30px;
+.footer-container{
+    height: fit-content;
     background-color: var(--md-sys-color-surface-variant);
-    font-size:.8em;
     font-weight: 800;
-    padding:5px;
+    padding:4px;
     letter-spacing:.1em;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align:center;
+}
+
+.footer-container span{
+    font-size:30%;
 }
 
 .tmdb_logo{
     margin: 0 auto;
-    width:10%;
     
+    width:40%;
 }
+
+.connect-footer a{
+    padding:10px;
+}
+
+/****adjustments for later***/
+/*adjust the width of the item to be 95% for smalll windows*/
