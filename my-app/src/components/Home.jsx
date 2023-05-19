@@ -16,8 +16,8 @@ export default function Home () {
                         <div className="item-runtime">Runtime: 3h 14m</div>
                         <div className="item-rating">Rated: PG-13</div>
                         <div className="item-genre">Drama/Romance</div>
-                        <div className="item-personal">Watched? <br></br> Yes! <br></br><br></br>Made me feel:<br></br>😭</div>
-                        {/* <div><img src = "</div> */}
+                        <div className="item-personal">Watched? <br></br> Yes! <br></br>Made me feel:<br></br><span className="emoji">😭</span></div>
+                        <div className="poster-container"><img className="poster" src = "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg"/></div>
                     </div>
                 </div>
             </div>

@@ -4,6 +4,7 @@ import axios from 'axios'
 import { BASE_URL } from './globals'
 import Home from './components/Home'
 import Nav from './components/Nav'
+import Footer from './components/Footer'
 
 const App = () => {
   const [movies, setMovies] = useState([])
@@ -28,6 +29,9 @@ const App = () => {
       <main>
         <Home/>
       </main>
+      <footer>
+        <Footer/>
+      </footer>
     </div>
   )}
 
