@@ -1,23 +1,23 @@
-import './styles/App.css'
-import { useState, useEffect } from 'react'
-import axios from 'axios'
-import { BASE_URL } from './globals'
-import Home from './components/Home'
-import Nav from './components/Nav'
-import Footer from './components/Footer'
+import "./styles/App.css";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import { BASE_URL } from "./globals";
+import Home from "./components/Home";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 const App = () => {
-  const [movies, setMovies] = useState([])
+  const [movies, setMovies] = useState([]);
   useEffect(() => {
     const getMovies = async () => {
-      const response = await axios.get(`${BASE_URL}/discover/movie?api_key=${process.env.REACT_APP_TMDB_KEY}`)
-      setMovies(response.data.results)
-    }
-    getMovies()
-    console.log(movies)
-  }, [])
-
-
+      const response = await axios.get(
+        `${BASE_URL}/discover/movie?api_key=${process.env.REACT_APP_TMDB_KEY}`
+      );
+      setMovies(response.data.results);
+    };
+    getMovies();
+    console.log(movies);
+  }, []);
 
   return (
     <div className="App">
@@ -27,12 +27,13 @@ const App = () => {
         </div>
       </header>
       <main>
-        <Home/>
+        <Home />
       </main>
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
     </div>
-  )}
+  );
+};
 
 export default App;
