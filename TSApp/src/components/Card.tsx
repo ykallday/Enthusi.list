@@ -11,8 +11,13 @@ const Container = styled.div`
   background-color: white;
   box-shadow: 2px 2px 2px lightgray;
   border-radius: 5px;
+  height: 300px;
   padding: 5px;
+  @media (max-width: 600px) {
+    height: 150px;
+  }
 `;
+
 const Title = styled.h4`
   background-color: #585e71;
   border-radius: 5px;
@@ -24,6 +29,10 @@ const Title = styled.h4`
   text-align: left;
   grid-area: title;
   font-weight: 300;
+  @media (max-width: 500px) {
+    font-size: 3vw;
+    line-height: 5vw;
+  }
 `;
 
 const Info = styled.ul`
@@ -58,11 +67,12 @@ const Rating = styled.div`
 const PosterSpot = styled.div`
   grid-area: picture;
   width: 100%;
+  height: 100%;
   padding: 0.5vw;
 `;
 const Poster = styled.img`
   width: inherit;
-  height: 100%;
+  height: inherit;
   object-fit: cover;
   border-radius: 10px;
 `;
