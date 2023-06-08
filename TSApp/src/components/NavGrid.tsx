@@ -1,3 +1,4 @@
+import { GrMenu } from "react-icons/gr";
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 
@@ -28,6 +29,7 @@ const StyledLink = styled(Link)`
 const NavGrid = () => {
   return (
     <Grid>
+      <GrMenu color="black" size={30} onClick={toggleView} />
       <Button>
         <StyledLink to="/">Home</StyledLink>
       </Button>
